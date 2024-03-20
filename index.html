@@ -1,24 +1,81 @@
-<!-- 1. create the basic html structure. your structure should include a blue heading and a red paragragh with font size 15px -->
+<!-- FILEPATH: /c:/Users/HP 450 G7/Power Learn Project/Web Development Module/web-technologies-level-1-hackathon/index.html -->
 
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Web Technologies Level 1 Hackathon</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- 1. create the basic html structure. your structure should include a blue heading and a red paragraph with font size 15px -->
+  <h1 style="color: blue;">Heading</h1>
+  <p style="color: red; font-size: 15px;">Paragraph</p>
 
-<!-- 2. in your html file, add a link that opens a new tab to an external resource  -->
+  <!-- 2. in your html file, add a link that opens a new tab to an external resource -->
+  <a href="https://www.example.com" target="_blank">External Resource</a>
 
+  <!-- 3. create a section and add an image, using css; place a green border on the image, the image should be 500px wide and 500px high -->
+  <section>
+    <img src="image.jpg" style="border: 2px solid green; width: 500px; height: 500px;">
+  </section>
 
-<!-- 3. create a section and add an image, using css; place a green border on the image, the image should be 500px wide and 500px high -->
+  <!-- 4. create another section add a form that takes in the following input:
+    a. name
+    b. email address
+    c. phone number
+    d. age
+    e. radio checkbox for gender (use fieldset to group the gender input)
+    f. dropdown for multi-selection of subjects: English, Math, Science, Art and Craft, Agriculture, Geography and History
+    g. password
+    h. a hidden field to capture sessionId
+    i. cancel button that clears form inputs
+    j. submit button with text register
+    make sure to incorporate relevant labels in your form elements using the necessary and relevant input types and element attributes
+  -->
+  <section>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required><br>
 
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required><br>
 
-<!-- 4. create another section add a form that takes in the following input:
-  a. name
-  b. email address
-  c. phone number
-  d. age
-  e. radio checkbox for gender (use fieldset to group the gender input)
-  f. dropdown for multi-selection of subjects: English, Math, Science, Art and Craft, Agriculture, Geography and History
-  g. password
-  h. a hidden field to capture sessionId
-  i. cancel button that clears form inputs
-  j. submit button with text register
-  make sure to incorporate relevant labels in your form elements using the necessary and relevant input types and element attributes
--->
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" required><br>
 
-<!-- 5. all styling should be placed in the style.css, make sure to correctly embed the external css file on the index.html file using the relevant tag  -->
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" required><br>
+
+      <fieldset>
+        <legend>Gender:</legend>
+        <label for="male">Male</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="female">Female</label>
+        <input type="radio" id="female" name="gender" value="female">
+      </fieldset>
+
+      <label for="subjects">Subjects:</label>
+      <select id="subjects" name="subjects" multiple>
+        <option value="english">English</option>
+        <option value="math">Math</option>
+        <option value="science">Science</option>
+        <option value="art">Art and Craft</option>
+        <option value="agriculture">Agriculture</option>
+        <option value="geography">Geography</option>
+        <option value="history">History</option>
+      </select><br>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required><br>
+
+      <input type="hidden" name="sessionId" value="12345">
+
+      <button type="button" onclick="document.getElementById('name').value = ''; document.getElementById('email').value = ''; document.getElementById('phone').value = ''; document.getElementById('age').value = ''; document.getElementById('male').checked = false; document.getElementById('female').checked = false; document.getElementById('subjects').selectedIndex = -1; document.getElementById('password').value = '';">Cancel</button>
+
+      <input type="submit" value="Register">
+    </form>
+  </section>
+
+  <!-- 5. all styling should be placed in the style.css, make sure to correctly embed the external css file on the index.html file using the relevant tag -->
+</body>
+</html>
