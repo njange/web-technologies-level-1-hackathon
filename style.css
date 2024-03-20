@@ -1,5 +1,14 @@
-p {
-    color: #333;
-    font-size: 16px;
-    line-height: 1.5;
+body {
+    background-color: #ffffff; /* white background */
+    color: #000000; /* black text color */
 }
+
+h1, h2, h3 {
+    color: #0000ff; /* blue heading color */
+}
+
+a {
+    color: #0000ff; /* blue link color */
+}
+
+/* Add more CSS rules for specific elements as needed */
