@@ -4,6 +4,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+
 }
 
 form {
@@ -23,4 +27,29 @@ a {
     color: #0000ff; /* blue link color */
 }
 
+input[type="text"], input[type="password"] {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #0000ff; /* blue border */
+}
+
+input[type="submit"] {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #0000ff; /* blue border */
+    background-color: #ffffff; /* white background */
+    color: #0000ff; /* blue text color */
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0000ff; /* blue background */
+    color: #ffffff; /* white text color */
+}
+
+p {
+    margin: 10px 0;
+}
 /* Add more CSS rules for specific elements as needed */
