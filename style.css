@@ -1,6 +1,18 @@
 body {
     background-color: #ffffff; /* white background */
     color: #000000; /* black text color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    background-color: #0000ff; /* blue background */
+    padding: 20px;
+    color: #ffffff; /* white text color */
+    border-radius: 10px;
+    flex-direction: column;
+    display: flex;
 }
 
 h1, h2, h3 {
